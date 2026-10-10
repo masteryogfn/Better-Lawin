@@ -6,7 +6,7 @@ const config = JSON.parse(fs.readFileSync("./Config/config.json").toString());
 module.exports = {
     commandInfo: {
         name: "ban",
-        description: "Ban a user from the backend by their username.",
+        description: "Ban a user from Better Lawin!",
         options: [
             {
                 name: "username",

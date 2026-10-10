@@ -1,7 +1,7 @@
 {
-  "name": "lawinserverv2",
+  "name": "Better Lawin",
   "version": "1.0.0",
-  "description": "LawinServer V2 is a fortnite backend that features an account system and xmpp.",
+  "description": "Better Lawin is a fortnite backend that features an account system and xmpp.",
   "main": "index.js",
   "dependencies": {
     "bcrypt": "^5.1.0",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Lawin0129/LawinServerV2.git"
+    "url": "git+https://github.com/Lawin0129/Better Lawin.git"
   },
   "keywords": [
     "fortnite",
@@ -31,10 +31,10 @@
     "server",
     "v2"
   ],
-  "author": "Lawin0129",
+  "author": "Lawin0129 & M4STERY",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/Lawin0129/LawinServerV2/issues"
+    "url": "https://github.com/Lawin0129/Better Lawin/issues"
   },
-  "homepage": "https://github.com/Lawin0129/LawinServerV2#readme"
+  "homepage": "https://github.com/Lawin0129/Better Lawin#readme"
 }

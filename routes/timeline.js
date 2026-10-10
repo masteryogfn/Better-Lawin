@@ -10,12 +10,12 @@ app.get("/fortnite/api/calendar/v1/timeline", (req, res) => {
     let activeEvents = [
         {
             "eventType": `EventFlag.Season${memory.season}`,
-            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeUntil": "2028-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         },
         {
             "eventType": `EventFlag.${memory.lobby}`,
-            "activeUntil": "9999-01-01T00:00:00.000Z",
+            "activeUntil": "2028-01-01T00:00:00.000Z",
             "activeSince": "2020-01-01T00:00:00.000Z"
         }
     ];
@@ -24,7 +24,7 @@ app.get("/fortnite/api/calendar/v1/timeline", (req, res) => {
         channels: {
             "client-matchmaking": {
                 states: [],
-                cacheExpire: "9999-01-01T00:00:00.000Z"
+                cacheExpire: "2028-01-01T00:00:00.000Z"
             },
             "client-events": {
                 states: [{
@@ -37,18 +37,18 @@ app.get("/fortnite/api/calendar/v1/timeline", (req, res) => {
                         seasonTemplateId: `AthenaSeason:athenaseason${memory.season}`,
                         matchXpBonusPoints: 0,
                         seasonBegin: "2020-01-01T00:00:00Z",
-                        seasonEnd: "9999-01-01T00:00:00Z",
-                        seasonDisplayedEnd: "9999-01-01T00:00:00Z",
-                        weeklyStoreEnd: "9999-01-01T00:00:00Z",
-                        stwEventStoreEnd: "9999-01-01T00:00:00.000Z",
-                        stwWeeklyStoreEnd: "9999-01-01T00:00:00.000Z",
+                        seasonEnd: "2028-01-01T00:00:00Z",
+                        seasonDisplayedEnd: "2028-01-01T00:00:00Z",
+                        weeklyStoreEnd: "2028-01-01T00:00:00Z",
+                        stwEventStoreEnd: "2028-01-01T00:00:00.000Z",
+                        stwWeeklyStoreEnd: "2028-01-01T00:00:00.000Z",
                         sectionStoreEnds: {
-                            Featured: "9999-01-01T00:00:00.000Z"
+                            Featured: "2028-01-01T00:00:00.000Z"
                         },
-                        dailyStoreEnd: "9999-01-01T00:00:00Z"
+                        dailyStoreEnd: "2028-01-01T00:00:00Z"
                     }
                 }],
-                cacheExpire: "9999-01-01T00:00:00.000Z"
+                cacheExpire: "2028-01-01T00:00:00.000Z"
             }
         },
         eventsTimeOffsetHrs: 0,

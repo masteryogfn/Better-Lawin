@@ -8,7 +8,7 @@ const { verifyToken, verifyClient } = require("../tokenManager/tokenVerify.js");
 const config = JSON.parse(fs.readFileSync("./Config/config.json").toString());
 
 app.post("/fortnite/api/game/v2/chat/*/*/*/pc", (req, res) => {
-    let resp = config.chat.EnableGlobalChat ? { "GlobalChatRooms": [{ "roomName": "lawinserverglobal" }] } : {};
+    let resp = config.chat.EnableGlobalChat ? { "GlobalChatRooms": [{ "roomName": "BetterLawinglobal" }] } : {};
 
     res.json(resp);
 });
@@ -33,22 +33,22 @@ app.get("/launcher/api/public/distributionpoints/", (req, res) => {
 app.get("/launcher/api/public/assets/*", async (req, res) => {
     res.json({
         "appName": "FortniteContentBuilds",
-        "labelName": "LawinServer",
+        "labelName": "BetterLawin",
         "buildVersion": "++Fortnite+Release-20.00-CL-19458861-Windows",
         "catalogItemId": "5cb97847cee34581afdbc445400e2f77",
-        "expires": "9999-12-31T23:59:59.999Z",
+        "expires": "2028-12-31T23:59:59.999Z",
         "items": {
             "MANIFEST": {
-                "signature": "LawinServer",
-                "distribution": "https://lawinserver.ol.epicgames.com/",
-                "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
+                "signature": "BetterLawin",
+                "distribution": "https://BetterLawin.ol.epicgames.com/",
+                "path": "Builds/Fortnite/Content/CloudDir/BetterLawin.manifest",
                 "hash": "55bb954f5596cadbe03693e1c06ca73368d427f3",
                 "additionalDistributions": []
             },
             "CHUNKS": {
-                "signature": "LawinServer",
-                "distribution": "https://lawinserver.ol.epicgames.com/",
-                "path": "Builds/Fortnite/Content/CloudDir/LawinServer.manifest",
+                "signature": "BetterLawin",
+                "distribution": "https://BetterLawin.ol.epicgames.com/",
+                "path": "Builds/Fortnite/Content/CloudDir/BetterLawin.manifest",
                 "additionalDistributions": []
             }
         },
@@ -59,7 +59,7 @@ app.get("/launcher/api/public/assets/*", async (req, res) => {
 app.get("/Builds/Fortnite/Content/CloudDir/*.manifest", async (req, res) => {
     res.set("Content-Type", "application/octet-stream")
 
-    const manifest = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "LawinServer.manifest"));
+    const manifest = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "BetterLawin.manifest"));
 
     res.status(200).send(manifest).end();
 })
@@ -67,7 +67,7 @@ app.get("/Builds/Fortnite/Content/CloudDir/*.manifest", async (req, res) => {
 app.get("/Builds/Fortnite/Content/CloudDir/*.chunk", async (req, res) => {
     res.set("Content-Type", "application/octet-stream")
 
-    const chunk = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "LawinServer.chunk"));
+    const chunk = fs.readFileSync(path.join(__dirname, "..", "responses", "CloudDir", "BetterLawin.chunk"));
 
     res.status(200).send(chunk).end();
 })

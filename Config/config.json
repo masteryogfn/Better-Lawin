@@ -1,15 +1,23 @@
 {
-    "moderators": ["discordId"],
-    "discord": {
-        "bot_token": ""
-    },
-    "mongodb": {
-        "database": "mongodb://127.0.0.1/lawindb"
-    },
-    "chat": {
-        "//": "Disabling global chat can help the server to perform faster as less resources are used.",
-        "EnableGlobalChat": false
-    },
+    "//": "DISCORD MOD ID / BOT TOKEN",
+    "moderators": ["YOUR_DISCORD_ID"],
+    "discord": {"bot_token": "YOUR_BOT_TOKEN"},
+
+
+    "//": "MONGODB / DATABASE (DATA STORAGE)",
+    "mongodb": {"database": "mongodb://127.0.0.1/betterlawin"},
+
+
+    "//": "GLOBAL CHAT (RECOMMENDED TO KEEP FALSE!)",
+    "chat": {"EnableGlobalChat": false},
+
+
+    "//": "BATTLE PASS (USED FROM RELOAD BACKEND BY BURLONE!)",
+    "bEnableBattlepass": true,
+    "bBattlePassSeason": 3,
+
+
+    "//": "GAMESERVER & MATCHMAKER",
     "matchmakerIP": "127.0.0.1:80",
     "gameServerIP": "127.0.0.1:7777"
 }

@@ -273,7 +273,7 @@ app.post("/auth/v1/oauth/token", async (req, res) => {
     res.json({
         access_token: "lawinsaccesstokenlol",
         token_type: "bearer",
-        expires_at: "9999-12-31T23:59:59.999Z",
+        expires_at: "2028-12-31T23:59:59.999Z",
         features: [
             "AntiCheat",
             "Connect",
@@ -347,9 +347,9 @@ app.post("/epic/oauth/v2/token", async (req, res) => {
         refresh_token: "lawinsrefreshtokenlol",
         id_token: "lawinsidtokenlol",
         expires_in: 7200,
-        expires_at: "9999-12-31T23:59:59.999Z",
+        expires_at: "2028-12-31T23:59:59.999Z",
         refresh_expires_in: 28800,
-        refresh_expires_at: "9999-12-31T23:59:59.999Z",
+        refresh_expires_at: "2028-12-31T23:59:59.999Z",
         account_id: req.user.accountId,
         client_id: clientId,
         application_id: "lawinsacpplicationidlol",
